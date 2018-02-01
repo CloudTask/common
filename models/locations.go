@@ -23,25 +23,10 @@ type Server struct {
 }
 
 /*
-集群名称定义
-*/
-const (
-	CLUSTER_DEV      = "dev"
-	CLUSTER_GDEV     = "gdev"
-	CLUSTER_GQC      = "gqc"
-	CLUSTER_WH7      = "wh7"
-	CLUSTER_E3       = "e3"
-	CLUSTER_E4       = "e4"
-	CLUSTER_E11      = "e11"
-	CLUSTER_CROSS_DC = "cross-dc"
-)
-
-/*
  位置信息
 */
 type WorkLocation struct {
 	Location string    `json:"location" bson:"location"` //位置名称
-	Cluster  string    `json:"cluster" bson:"cluster"`   //隶属调度集群
 	Group    []*Group  `json:"group" bson:"group"`       //分组信息
 	Server   []*Server `json:"server" bson:"server"`     //主机信息
 }
