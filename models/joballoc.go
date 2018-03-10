@@ -60,8 +60,9 @@ Job分配信息
 */
 type JobDataInfo struct {
 	JobData
-	JobName string `json:"jobname"`
-	IpAddr  string `json:"ipaddr"`
+	JobName  string `json:"jobname"`
+	IpAddr   string `json:"ipaddr"`
+	HostName string `json:"hostname"`
 }
 
 /*

@@ -18,6 +18,9 @@ const (
 	CreateGroupEvent    = "create_group"    //创建分组事件
 	ChangeGroupEvent    = "change_group"    //改变分组事件
 	RemoveGroupEvent    = "remove_group"    //删除分组事件
+	CreateRuntimeEvent  = "create_runtime"  //创建Runtime事件
+	ChangeRuntimeEvent  = "change_runtime"  //改变Runtime事件
+	RemoveRuntimeEvent  = "remove_runtime"  //删除Runtime事件
 )
 
 /*
